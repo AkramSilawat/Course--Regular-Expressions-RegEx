@@ -11,18 +11,47 @@
 
 // =======>> Repeating Characters <<======= // 
 
-/* 
 
-[]      //single character
-[abc123]000      // All Match           //a000 b000 c000 1000
-[^a]000          // not matched a000    //    b000 c000 1000
-(?<![a-zA-Z])000        ------ 000 a000 000 a000 000a       //Negetive Lookbehind
-[0-1]+          //secuence match
-[0-9]{11}       //match only 11 numbers
-[a-z]{4,8}      // match 4 to 8 word length match
-[a-z]{4,}       // match 4 to Infinity word lenght match 
 
-*/
+//  []      //single character
+
+//  [abc123]000      // All Match           //a000 b000 c000 1000
+
+//  [^a]000          // not matched a000    //    b000 c000 1000
+
+//  (?<![a-zA-Z])000        ------ 000 a000 000 a000 000a       //Negetive Lookbehind
+
+//  [0-1]+          //secuence match
+
+//  [0-9]{11}       //match only 11 numbers
+
+//  [a-z]{4,8}      // match 4 to 8 word length match
+
+//  [a-z]{4,}       // match 4 to Infinity word lenght match
+
+
+
+
+
+// =======>> MetaCharacters <<======= //
+
+//   \d    Match any digit character(same as [0-9])
+
+//   \w    match any word character (a-z, A-Z, 0-9 and _'s)
+
+//   \s    match a white character (spaces, tabs)
+
+//   \t    match a tab character onplay
+
+//   d -- matches the literals character, 'd'
+
+
+
+//   \d{3}\s\w{5}       // matched     // 455	65465
+
+//   \d{3}\s\w{5}       // matched     // 455	hell9
+
+//   \d{3}\s\w{5}       // No matched  // 45d    65465
 
 
 
