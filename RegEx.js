@@ -56,3 +56,27 @@
 
 
 
+// =======>> Special Character <<======= //
+
+//   +    => the one or more quantifier
+
+//   /    => the escape character
+
+//   []   => the character set
+
+//   [^]  => the negate symbol in a character set
+
+//   ?    => the 0 or more quantifier (makes a preceding char optional)
+
+//   .    => any character whatsoever (exept the newline character)
+
+//   *    => the 0 or more quantifier (a bit like +)
+
+
+
+// -->> Prectice  Code
+
+// a[a-z]?   =>   match =  ag , af, ar ,ab, am   // -> optional the last character
+
+// car.      =>   match =  car-,  car=, car?,  cars,  carz    // -> after car match any one chacter
+// car.      =>   No match =  car--,  car==, car??,  carss  
