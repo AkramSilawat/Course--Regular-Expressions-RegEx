@@ -37,7 +37,7 @@
 
 //   \d    Match any digit character(same as [0-9])
 
-//   \w    match any word character (a-z, A-Z, 0-9 and _'s)
+//   \w    match any word character (a-z, A-Z, 0-9 and _'sapc)
 
 //   \s    match a white character (spaces, tabs)
 
@@ -76,7 +76,36 @@
 
 // -->> Prectice  Code
 
-// a[a-z]?   =>   match =  ag , af, ar ,ab, am   // -> optional the last character
+// a[a-z]?   =>   match  =  ag , af, ar ,ab, am   // -> optional the last character
 
-// car.      =>   match =  car-,  car=, car?,  cars,  carz    // -> after car match any one chacter
-// car.      =>   No match =  car--,  car==, car??,  carss  
+// car.      =>   match  =  car-,  car=, car?,  cars,  carz    // -> after car match any one chacter
+// car.      =>   No match  =  car--,  car==, car??,  carss  
+
+// .+        =>  // match  =  match any chacter set
+
+// abc*      =>  // match  =  ab or abc or abcccccc
+
+// abc\*     =>  // match  =  abc*   // skip special character on regEx
+
+
+
+
+
+// =======>> Starting & Ending Patterns <<======= //
+
+
+//    ^[a - z]{ 5 } $   =  hello    
+
+
+
+
+// =======>> Alternate Characters <<======= //
+
+//    (p|t)yre  =>  pyre  & tyre
+
+//    (pet|toy|crazy) rabbit
+// -->  pet rabbit
+// -->  toy rabbit
+// -->  crazy rabbit
+
+//    (pet|toy|crazy)? rabbit   -->  hello not select  ->  rabbit select
