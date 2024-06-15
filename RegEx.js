@@ -109,3 +109,19 @@
 // -->  crazy rabbit
 
 //    (pet|toy|crazy)? rabbit   -->  hello not select  ->  rabbit select
+
+
+
+
+// ======= 15. Email Regx ======= //
+
+    //      1             2            3          4
+    //  (yourname) @   (domain) . (extension) (.again)
+
+    //  (theboss) @   (thenetninja) . (co)   (.uk)
+
+
+// 1. any letters, numbers, dots and / or hyphens
+// 2. any letters, numbers, and / or hyphens
+// 3. any letters
+// 4. dot(.) then any letters
